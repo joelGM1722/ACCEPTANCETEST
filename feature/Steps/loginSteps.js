@@ -13,7 +13,7 @@ Given('I am on the {string} page', async function (string) {
     await this.driver.get(`https://the-internet.herokuapp.com/${string}`);
 });
 
-When('I loguin with {string} and {string}', function (string, string2) {
+When('I login with {string} and {string}', function (string, string2) {
     this.driver.findElement(By.id("username")).sendKeys(string);
     this.driver.findElement(By.id("password")).sendKeys(string2);
     this.driver.findElement(By.className("radius")).click();
